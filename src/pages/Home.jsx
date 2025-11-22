@@ -8,35 +8,35 @@ const Home = () => {
         {
             title: 'Inridning av häst',
             description: 'Professionell inridning och vidareutbildning med hästens välmående i fokus.',
-            image: 'https://images.unsplash.com/photo-1551884831-bbf3ddd36b8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: 'jazz1.jpg',
             link: '/inridning',
             icon: Heart
         },
         {
             title: 'Träningar / Ridlektioner',
             description: 'Utveckla din ridning genom våra träningar och lektioner. Boka din tid här.',
-            image: 'https://images.unsplash.com/photo-1529521562626-389725781777?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: 'cute.jpg',
             link: '/traningar',
             icon: Calendar
         },
         {
             title: 'Försäljning av häst',
             description: 'Hitta din nästa tävlingskamrat eller bästa vän bland våra saluhästar.',
-            image: 'https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80',
+            image: 'mal1.jpg',
             link: '/forsaljning',
             icon: DollarSign
         },
         {
             title: 'Våra hästar',
             description: 'Möt våra fantastiska hästar. Både unghästar, läromästare och tävlingshästar.',
-            image: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.0.3&auto=format&fit=crop&w=2094&q=80',
+            image: 'horse.jpg',
             link: '/vara-hastar',
             icon: Image
         },
         {
             title: 'Tävlingar',
             description: 'Se våra hästars prestationer och resultat från tävlingsbanorna.',
-            image: 'https://images.unsplash.com/photo-1535083252457-6080fe29be45?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80',
+            image: 'tavling.jpg',
             link: '/tavlingar',
             icon: Trophy
         }
