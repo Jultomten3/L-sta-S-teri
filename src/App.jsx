@@ -1,14 +1,27 @@
-import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import Competitions from './pages/Competitions';
+import Training from './pages/Training';
+import Sales from './pages/Sales';
+import Lessons from './pages/Lessons';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="p-8 bg-white rounded-lg shadow-md">
-        <h1 className="text-2xl font-bold text-gray-800 mb-4">Welcome to Låsta Säteri</h1>
-        <p className="text-gray-600">Site is under construction.</p>
-      </div>
-    </div>
-  )
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/tavlingar" element={<Competitions />} />
+          <Route path="/inridning" element={<Training />} />
+          <Route path="/forsaljning" element={<Sales />} />
+          <Route path="/traningar" element={<Lessons />} />
+          <Route path="/kontakt" element={<Contact />} />
+        </Routes>
+      </Layout>
+    </Router>
+  );
 }
 
-export default App
+export default App;
