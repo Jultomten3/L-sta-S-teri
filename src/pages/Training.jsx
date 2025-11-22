@@ -3,10 +3,7 @@ import { CheckCircle } from 'lucide-react';
 
 const Training = () => {
     const prices = [
-        { service: 'Inridning (per månad)', price: '6000 kr', details: 'Inkl. uppstallning, foder och skötsel' },
-        { service: 'Vidareutbildning (per månad)', price: '9 500 kr', details: 'Inkl. uppstallning, foder och skötsel' },
-        { service: 'Tillridning (per vecka)', price: '2 500 kr', details: 'Kortare perioder för specifika problem' },
-        { service: 'Visning på tävling/test', price: '1 500 kr', details: 'Exkl. resa och anmälningsavgifter' },
+        { service: 'Inridning (per månad)', price: '10000 kr', details: 'Inkl. uppstallning, foder och skötsel' },
     ];
 
     const features = [
@@ -25,7 +22,7 @@ const Training = () => {
                         <h1 className="text-4xl font-serif font-bold text-stone-900 mb-6">Inridning & Utbildning</h1>
                         <p className="text-lg text-stone-600 leading-relaxed">
                             Vi erbjuder professionell inridning och vidareutbildning av din häst.
-                            Vår filosofi bygger på tålamod, konsekvens och att alltid lyssna på hästen.
+                            Vår filosofi bygger på tålamod, långsiktighet och lyhördhet till hästen.
                             Målet är en hållbar, glad och samarbetsvillig häst.
                         </p>
                     </div>
@@ -33,7 +30,7 @@ const Training = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
                         <div>
                             <img
-                                src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80"
+                                src="jazz1.jpg"
                                 alt="Hästträning"
                                 className="rounded-xl shadow-lg object-cover h-full w-full"
                             />
@@ -75,7 +72,7 @@ const Training = () => {
                             </div>
                             <div className="mt-8 p-4 bg-amber-50 rounded-lg border border-amber-100 text-sm text-amber-900">
                                 <p className="font-semibold mb-1">Notera:</p>
-                                <p>Priserna är inklusive moms. Skoning och veterinärkostnader tillkommer. Första månaden betalas i förskott.</p>
+                                <p>Priserna är inklusive moms. Skoning tillkommer. Första månaden betalas i förskott.</p>
                             </div>
                         </div>
                     </div>

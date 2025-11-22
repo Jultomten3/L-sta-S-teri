@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, Clock, User, MapPin, X, Check } from 'lucide-react';
+import { Calendar, Clock, Check } from 'lucide-react';
 
 const Lessons = () => {
     const [selectedSlot, setSelectedSlot] = useState(null);
@@ -7,11 +7,11 @@ const Lessons = () => {
     const [bookingStep, setBookingStep] = useState('confirm'); // 'confirm' or 'success'
 
     const schedule = [
-        { id: 1, day: 'Måndag', time: '17:00', type: 'Hoppning', level: 'Lätt/Msv', trainer: 'Anna Andersson', spots: 2 },
-        { id: 2, day: 'Måndag', time: '18:30', type: 'Markarbete', level: 'Alla nivåer', trainer: 'Anna Andersson', spots: 4 },
-        { id: 3, day: 'Tisdag', time: '17:30', type: 'Dressyr', level: 'Lätt A', trainer: 'Lars Larsson', spots: 1 },
-        { id: 4, day: 'Onsdag', time: '18:00', type: 'Hoppning', level: 'Nybörjare', trainer: 'Anna Andersson', spots: 0 }, // Full
-        { id: 5, day: 'Torsdag', time: '17:00', type: 'Dressyr', level: 'Msv B', trainer: 'Lars Larsson', spots: 3 },
+        { id: 1, day: 'Måndag', time: '17:00 - 17:45', spots: 1 },
+        { id: 2, day: 'Måndag', time: '17:45 - 18:30', spots: 1 },
+        { id: 3, day: 'Tisdag', time: '17:00 - 17:45', spots: 0 }, // Booked
+        { id: 4, day: 'Onsdag', time: '18:00 - 18:45', spots: 1 },
+        { id: 5, day: 'Torsdag', time: '17:00 - 17:45', spots: 1 },
     ];
 
     const handleBookClick = (slot) => {
@@ -33,7 +33,7 @@ const Lessons = () => {
                 <div className="text-center mb-12">
                     <h1 className="text-4xl font-serif font-bold text-stone-900 mb-4">Träningar & Lektioner</h1>
                     <p className="text-stone-600 max-w-2xl mx-auto">
-                        Boka in dig på våra veckoträningar. Vi har grupper för alla nivåer.
+                        Boka privatlektioner för att utveckla din ridning. Alla pass är 45 minuter.
                     </p>
                 </div>
 
@@ -43,9 +43,8 @@ const Lessons = () => {
                             <thead className="bg-stone-100">
                                 <tr>
                                     <th className="px-6 py-4 text-left text-xs font-bold text-stone-500 uppercase tracking-wider">Dag & Tid</th>
-                                    <th className="px-6 py-4 text-left text-xs font-bold text-stone-500 uppercase tracking-wider">Pass</th>
-                                    <th className="px-6 py-4 text-left text-xs font-bold text-stone-500 uppercase tracking-wider">Tränare</th>
                                     <th className="px-6 py-4 text-left text-xs font-bold text-stone-500 uppercase tracking-wider">Plats</th>
+                                    <th className="px-6 py-4 text-left text-xs font-bold text-stone-500 uppercase tracking-wider">Pris</th>
                                     <th className="px-6 py-4 text-right text-xs font-bold text-stone-500 uppercase tracking-wider">Boka</th>
                                 </tr>
                             </thead>
@@ -60,17 +59,11 @@ const Lessons = () => {
                                                 </span>
                                             </div>
                                         </td>
-                                        <td className="px-6 py-4">
-                                            <div className="flex flex-col">
-                                                <span className="font-medium text-stone-900">{slot.type}</span>
-                                                <span className="text-sm text-stone-500">{slot.level}</span>
-                                            </div>
-                                        </td>
-                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-stone-600">
-                                            {slot.trainer}
-                                        </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-stone-600">
                                             Ridhus A
+                                        </td>
+                                        <td className="px-6 py-4 whitespace-nowrap text-sm text-stone-600">
+                                            500 kr
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-right">
                                             {slot.spots > 0 ? (
@@ -78,11 +71,11 @@ const Lessons = () => {
                                                     onClick={() => handleBookClick(slot)}
                                                     className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-amber-700 hover:bg-amber-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition-colors"
                                                 >
-                                                    Boka ({slot.spots} kvar)
+                                                    Boka
                                                 </button>
                                             ) : (
                                                 <span className="inline-flex items-center px-4 py-2 border border-stone-200 text-sm font-medium rounded-md text-stone-400 bg-stone-50 cursor-not-allowed">
-                                                    Fullbokat
+                                                    Bokad
                                                 </span>
                                             )}
                                         </td>
@@ -116,9 +109,10 @@ const Lessons = () => {
                                                 </h3>
                                                 <div className="mt-4 bg-stone-50 p-4 rounded-md">
                                                     <p className="text-sm text-gray-500 mb-2">Du håller på att boka:</p>
-                                                    <p className="font-bold text-stone-900">{selectedSlot?.type} - {selectedSlot?.level}</p>
+                                                    <p className="font-bold text-stone-900">Privatlektion</p>
                                                     <p className="text-stone-700">{selectedSlot?.day} kl {selectedSlot?.time}</p>
-                                                    <p className="text-stone-600 text-sm mt-1">Tränare: {selectedSlot?.trainer}</p>
+                                                    <p className="text-stone-600 text-sm mt-1">Pris: 500 kr (inkl. moms)</p>
+                                                    <p className="text-stone-500 text-xs mt-1">Anläggningsavgift tillkommer.</p>
                                                 </div>
                                                 <p className="mt-4 text-sm text-gray-500">
                                                     Genom att klicka på "Bekräfta" godkänner du våra bokningsvillkor. Betalning sker på plats via Swish.

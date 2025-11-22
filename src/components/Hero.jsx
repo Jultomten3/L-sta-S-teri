@@ -10,19 +10,19 @@ const Hero = () => {
     const slides = [
         {
             id: 1,
-            image: 'https://images.unsplash.com/photo-1534056877439-dff92a1e931c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+            image: 'header.png',
             title: 'Välkommen till Låsta Säteri',
             subtitle: 'Professionell hästverksamhet i harmonisk miljö'
         },
         {
             id: 2,
-            image: 'https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80',
+            image: 'sanzette.png',
             title: 'Utbildning & Inridning',
             subtitle: 'Vi tar hand om din hästs utbildning med tålamod och kunskap'
         },
         {
             id: 3,
-            image: 'jazz1.jpg',
+            image: 'saga.png',
             title: 'Hästar till salu',
             subtitle: 'Hitta din nästa stjärna hos oss'
         }

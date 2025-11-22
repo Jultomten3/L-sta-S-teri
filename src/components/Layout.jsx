@@ -13,12 +13,11 @@ const Layout = ({ children }) => {
     const location = useLocation();
 
     const navLinks = [
-        { path: '/', label: 'Hem' },
-        { path: '/tavlingar', label: 'Tävlingar' },
         { path: '/inridning', label: 'Inridning' },
+        { path: '/traningar', label: 'Träning' },
         { path: '/forsaljning', label: 'Försäljning' },
-        { path: '/traningar', label: 'Träningar' },
-        { path: '/kontakt', label: 'Kontakt' },
+        { path: '/vara-hastar', label: 'Våra hästar' },
+        { path: '/tavlingar', label: 'Tävlingar' },
     ];
 
     const isActive = (path) => {
