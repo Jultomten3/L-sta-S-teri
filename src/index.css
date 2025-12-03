@@ -3,6 +3,12 @@
 @theme {
     --font-sans: 'Inter', system-ui, sans-serif;
     --font-serif: 'Playfair Display', Georgia, serif;
+
+    --color-dark-green: #102820;
+    --color-hunter-green: #4C6444;
+    --color-khaki: #CABA9C;
+    --color-raw-umber: #8A6240;
+    --color-cafe-noir: #4D2D18;
 }
 
 @layer base {

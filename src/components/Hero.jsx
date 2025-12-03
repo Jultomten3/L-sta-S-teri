@@ -63,14 +63,14 @@ const Hero = () => {
     };
 
     return (
-        <div className="relative h-[60vh] md:h-[80vh] overflow-hidden bg-stone-900">
+        <div className="relative h-[60vh] md:h-[80vh] overflow-hidden bg-dark-green">
             {slides.map((slide, index) => (
                 <div
                     key={slide.id}
                     className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'
                         }`}
                 >
-                    <div className="absolute inset-0 bg-black/30 z-10" /> {/* Overlay */}
+                    <div className="absolute inset-0 bg-dark-green/30 z-10" /> {/* Overlay */}
                     <img
                         src={slide.image}
                         alt={slide.title}
@@ -90,13 +90,13 @@ const Hero = () => {
             {/* Navigation Buttons */}
             <button
                 onClick={prevSlide}
-                className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white/20 hover:bg-white/40 text-white transition-colors backdrop-blur-sm"
+                className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-khaki/20 hover:bg-khaki/40 text-white transition-colors backdrop-blur-sm"
             >
                 <ChevronLeft size={32} />
             </button>
             <button
                 onClick={nextSlide}
-                className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white/20 hover:bg-white/40 text-white transition-colors backdrop-blur-sm"
+                className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-khaki/20 hover:bg-khaki/40 text-white transition-colors backdrop-blur-sm"
             >
                 <ChevronRight size={32} />
             </button>
@@ -107,7 +107,7 @@ const Hero = () => {
                     <button
                         key={index}
                         onClick={() => goToSlide(index)}
-                        className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-white scale-110' : 'bg-white/50 hover:bg-white/80'
+                        className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-khaki scale-110' : 'bg-khaki/50 hover:bg-khaki/80'
                             }`}
                     />
                 ))}

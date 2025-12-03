@@ -7,7 +7,7 @@ const OurHorses = () => {
         <div className="py-12 bg-stone-50 min-h-screen animate-fade-in-up">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl font-serif font-bold text-stone-900 mb-6">Våra Hästar</h1>
+                    <h1 className="text-4xl font-serif font-bold text-dark-green mb-6">Våra Hästar</h1>
                     <p className="text-lg text-stone-600 leading-relaxed max-w-2xl mx-auto">
                         Här presenterar vi hästarna som finns på gården just nu.
                         Vissa är under utbildning, andra tävlas aktivt och några är till salu.
@@ -31,14 +31,14 @@ const OurHorses = () => {
                                 </div>
                                 <div className="p-6">
                                     <div className="flex justify-between items-start mb-2">
-                                        <h3 className="text-2xl font-serif font-bold text-stone-900 group-hover:text-amber-700 transition-colors">{horse.name}</h3>
-                                        <span className="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded">{horse.age}</span>
+                                        <h3 className="text-2xl font-serif font-bold text-dark-green group-hover:text-hunter-green transition-colors">{horse.name}</h3>
+                                        <span className="bg-khaki/20 text-hunter-green text-xs font-semibold px-2.5 py-0.5 rounded">{horse.age}</span>
                                     </div>
-                                    <p className="text-sm text-amber-700 font-medium mb-4">{horse.breed}</p>
+                                    <p className="text-sm text-hunter-green font-medium mb-4">{horse.breed}</p>
                                     <p className="text-stone-600 leading-relaxed line-clamp-3">
                                         {horse.description}
                                     </p>
-                                    <div className="mt-4 text-amber-700 font-medium text-sm flex items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <div className="mt-4 text-hunter-green font-medium text-sm flex items-center opacity-0 group-hover:opacity-100 transition-opacity">
                                         Läs mer &rarr;
                                     </div>
                                 </div>

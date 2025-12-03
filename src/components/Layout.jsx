@@ -28,13 +28,13 @@ const Layout = ({ children }) => {
     return (
         <div className="min-h-screen flex flex-col bg-stone-50 text-stone-800 font-sans">
             {/* Header */}
-            <header className="bg-white shadow-sm sticky top-0 z-50">
+            <header className="bg-dark-green shadow-sm sticky top-0 z-50">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-20">
                         {/* Logo */}
                         <Link to="/" className="flex items-center space-x-3">
                             <img src="/logo.png" alt="Låsta Säteri Logo" className="h-12 w-auto" />
-                            <span className="text-2xl font-bold text-stone-900 tracking-wide" style={{ fontFamily: 'Georgia, serif' }}>
+                            <span className="text-2xl font-bold text-khaki tracking-wide" style={{ fontFamily: 'Georgia, serif' }}>
                                 Låsta Säteri
                             </span>
                         </Link>
@@ -48,8 +48,8 @@ const Layout = ({ children }) => {
                                     className={cn(
                                         "text-sm font-medium transition-colors duration-200 hover:text-amber-700",
                                         isActive(link.path)
-                                            ? "text-amber-800 border-b-2 border-amber-800"
-                                            : "text-stone-600"
+                                            ? "text-khaki border-b-2 border-khaki"
+                                            : "text-stone-300 hover:text-khaki"
                                     )}
                                 >
                                     {link.label}
@@ -63,7 +63,7 @@ const Layout = ({ children }) => {
                                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                                 className="text-stone-600 hover:text-stone-900 focus:outline-none"
                             >
-                                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                                {isMenuOpen ? <X size={24} className="text-khaki" /> : <Menu size={24} className="text-khaki" />}
                             </button>
                         </div>
                     </div>
@@ -99,7 +99,7 @@ const Layout = ({ children }) => {
             </main>
 
             {/* Footer */}
-            <footer className="bg-stone-900 text-stone-300 py-12">
+            <footer className="bg-cafe-noir text-stone-300 py-12">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div>
@@ -112,15 +112,15 @@ const Layout = ({ children }) => {
                             <h3 className="text-white text-lg font-serif font-bold mb-4">Kontakt</h3>
                             <ul className="space-y-2 text-sm">
                                 <li className="flex items-center space-x-2">
-                                    <Mail size={16} className="text-amber-600" />
+                                    <Mail size={16} className="text-khaki" />
                                     <a href="mailto:info@lastasateri.se" className="hover:text-white transition-colors">info@lastasateri.se</a>
                                 </li>
                                 <li className="flex items-center space-x-2">
-                                    <Phone size={16} className="text-amber-600" />
+                                    <Phone size={16} className="text-khaki" />
                                     <a href="tel:+46700000000" className="hover:text-white transition-colors">070-000 00 00</a>
                                 </li>
                                 <li className="flex items-center space-x-2">
-                                    <MapPin size={16} className="text-amber-600" />
+                                    <MapPin size={16} className="text-khaki" />
                                     <span>Låsta Säteri, Strängnäs</span>
                                 </li>
                             </ul>
@@ -128,10 +128,10 @@ const Layout = ({ children }) => {
                         <div>
                             <h3 className="text-white text-lg font-serif font-bold mb-4">Följ oss</h3>
                             <div className="flex space-x-4">
-                                <a href="#" className="text-stone-400 hover:text-amber-500 transition-colors">
+                                <a href="#" className="text-stone-400 hover:text-khaki transition-colors">
                                     <Instagram size={24} />
                                 </a>
-                                <a href="#" className="text-stone-400 hover:text-amber-500 transition-colors">
+                                <a href="#" className="text-stone-400 hover:text-khaki transition-colors">
                                     <Facebook size={24} />
                                 </a>
                             </div>

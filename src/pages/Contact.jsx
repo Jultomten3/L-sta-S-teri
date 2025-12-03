@@ -19,28 +19,28 @@ const Contact = () => {
                             <h3 className="text-2xl font-serif font-bold text-stone-900 mb-6">Kontaktuppgifter</h3>
                             <div className="space-y-6">
                                 <a href="mailto:info@lastasateri.se" className="flex items-start group">
-                                    <div className="bg-amber-100 p-3 rounded-full group-hover:bg-amber-200 transition-colors">
-                                        <Mail className="text-amber-800" size={24} />
+                                    <div className="bg-khaki/20 p-3 rounded-full group-hover:bg-khaki/40 transition-colors">
+                                        <Mail className="text-raw-umber" size={24} />
                                     </div>
                                     <div className="ml-4">
                                         <p className="text-sm font-medium text-stone-500 uppercase tracking-wide">E-post</p>
-                                        <p className="text-lg text-stone-900 font-medium group-hover:text-amber-700 transition-colors">info@lastasateri.se</p>
+                                        <p className="text-lg text-stone-900 font-medium group-hover:text-hunter-green transition-colors">info@lastasateri.se</p>
                                     </div>
                                 </a>
 
                                 <a href="tel:+46700000000" className="flex items-start group">
-                                    <div className="bg-amber-100 p-3 rounded-full group-hover:bg-amber-200 transition-colors">
-                                        <Phone className="text-amber-800" size={24} />
+                                    <div className="bg-khaki/20 p-3 rounded-full group-hover:bg-khaki/40 transition-colors">
+                                        <Phone className="text-raw-umber" size={24} />
                                     </div>
                                     <div className="ml-4">
                                         <p className="text-sm font-medium text-stone-500 uppercase tracking-wide">Telefon</p>
-                                        <p className="text-lg text-stone-900 font-medium group-hover:text-amber-700 transition-colors">070-000 00 00</p>
+                                        <p className="text-lg text-stone-900 font-medium group-hover:text-hunter-green transition-colors">070-000 00 00</p>
                                     </div>
                                 </a>
 
                                 <div className="flex items-start">
-                                    <div className="bg-amber-100 p-3 rounded-full">
-                                        <MapPin className="text-amber-800" size={24} />
+                                    <div className="bg-khaki/20 p-3 rounded-full">
+                                        <MapPin className="text-raw-umber" size={24} />
                                     </div>
                                     <div className="ml-4">
                                         <p className="text-sm font-medium text-stone-500 uppercase tracking-wide">Adress</p>
@@ -58,7 +58,7 @@ const Contact = () => {
                                 height="100%"
                                 frameBorder="0"
                                 style={{ border: 0 }}
-                                src="https://maps.google.com/maps?q=59.33911304687921,17.090714655802916&z=14&output=embed"
+                                src="https://maps.google.com/maps?q=59.33911304687921,17.090714655802916&z=14&t=k&output=embed"
                                 allowFullScreen
                             ></iframe>
                         </div>
@@ -74,7 +74,7 @@ const Contact = () => {
                                     <input
                                         type="text"
                                         id="name"
-                                        className="block w-full px-4 py-3 rounded-lg border border-stone-200 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-shadow bg-stone-50"
+                                        className="block w-full px-4 py-3 rounded-lg border border-stone-200 focus:ring-2 focus:ring-hunter-green focus:border-hunter-green transition-shadow bg-stone-50"
                                         placeholder="Ditt namn"
                                     />
                                 </div>
@@ -83,7 +83,7 @@ const Contact = () => {
                                     <input
                                         type="email"
                                         id="email"
-                                        className="block w-full px-4 py-3 rounded-lg border border-stone-200 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-shadow bg-stone-50"
+                                        className="block w-full px-4 py-3 rounded-lg border border-stone-200 focus:ring-2 focus:ring-hunter-green focus:border-hunter-green transition-shadow bg-stone-50"
                                         placeholder="din@email.se"
                                     />
                                 </div>
@@ -93,7 +93,7 @@ const Contact = () => {
                                 <label htmlFor="subject" className="block text-sm font-medium text-stone-700 mb-1">Ämne</label>
                                 <select
                                     id="subject"
-                                    className="block w-full px-4 py-3 rounded-lg border border-stone-200 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-shadow bg-stone-50"
+                                    className="block w-full px-4 py-3 rounded-lg border border-stone-200 focus:ring-2 focus:ring-hunter-green focus:border-hunter-green transition-shadow bg-stone-50"
                                 >
                                     <option>Allmän förfrågan</option>
                                     <option>Bokning av träning</option>
@@ -107,14 +107,14 @@ const Contact = () => {
                                 <textarea
                                     id="message"
                                     rows="4"
-                                    className="block w-full px-4 py-3 rounded-lg border border-stone-200 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-shadow bg-stone-50"
+                                    className="block w-full px-4 py-3 rounded-lg border border-stone-200 focus:ring-2 focus:ring-hunter-green focus:border-hunter-green transition-shadow bg-stone-50"
                                     placeholder="Skriv ditt meddelande här..."
                                 ></textarea>
                             </div>
 
                             <button
                                 type="submit"
-                                className="w-full flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-amber-800 hover:bg-amber-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition-colors shadow-md hover:shadow-lg"
+                                className="w-full flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-hunter-green hover:bg-dark-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-hunter-green transition-colors shadow-md hover:shadow-lg"
                             >
                                 Skicka meddelande <Send size={18} className="ml-2" />
                             </button>

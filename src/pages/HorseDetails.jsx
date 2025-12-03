@@ -14,7 +14,7 @@ const HorseDetails = () => {
     return (
         <div className="py-12 bg-stone-50 min-h-screen animate-fade-in-up">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <Link to="/vara-hastar" className="inline-flex items-center text-amber-700 hover:text-amber-800 mb-8 transition-colors">
+                <Link to="/vara-hastar" className="inline-flex items-center text-hunter-green hover:text-dark-green mb-8 transition-colors">
                     <ArrowLeft className="mr-2" size={20} />
                     Tillbaka till alla hästar
                 </Link>
@@ -30,8 +30,8 @@ const HorseDetails = () => {
                         </div>
                         <div className="p-8 lg:p-12">
                             <div className="flex flex-wrap items-center gap-4 mb-6">
-                                <h1 className="text-4xl font-serif font-bold text-stone-900">{horse.name}</h1>
-                                <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-semibold">
+                                <h1 className="text-4xl font-serif font-bold text-dark-green">{horse.name}</h1>
+                                <span className="bg-khaki/20 text-hunter-green px-3 py-1 rounded-full text-sm font-semibold">
                                     {horse.age}
                                 </span>
                                 <span className="bg-stone-100 text-stone-600 px-3 py-1 rounded-full text-sm font-semibold">
@@ -41,21 +41,21 @@ const HorseDetails = () => {
 
                             <div className="grid grid-cols-2 gap-4 mb-8">
                                 <div className="flex items-center text-stone-600">
-                                    <Ruler className="mr-2 text-amber-600" size={20} />
+                                    <Ruler className="mr-2 text-raw-umber" size={20} />
                                     <span>{horse.height}</span>
                                 </div>
                                 <div className="flex items-center text-stone-600">
-                                    <Activity className="mr-2 text-amber-600" size={20} />
+                                    <Activity className="mr-2 text-raw-umber" size={20} />
                                     <span>{horse.gender}</span>
                                 </div>
                                 <div className="flex items-center text-stone-600 col-span-2">
-                                    <Award className="mr-2 text-amber-600" size={20} />
+                                    <Award className="mr-2 text-raw-umber" size={20} />
                                     <span>{horse.category}</span>
                                 </div>
                             </div>
 
                             <div className="prose prose-stone max-w-none">
-                                <h3 className="text-xl font-serif font-bold text-stone-900 mb-3">Om {horse.name}</h3>
+                                <h3 className="text-xl font-serif font-bold text-dark-green mb-3">Om {horse.name}</h3>
                                 <p className="text-stone-600 leading-relaxed mb-6">
                                     {horse.longDescription}
                                 </p>
