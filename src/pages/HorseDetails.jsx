@@ -21,7 +21,7 @@ const HorseDetails = () => {
 
                 <div className="bg-white rounded-xl shadow-xl overflow-hidden">
                     <div className="grid grid-cols-1 lg:grid-cols-2">
-                        <div className="h-96 lg:h-auto relative">
+                        <div className="h-[500px] lg:min-h-[600px] relative">
                             <img
                                 src={horse.image}
                                 alt={horse.name}

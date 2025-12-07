@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
                     <div className="flex justify-between items-center h-20">
                         {/* Logo */}
                         <Link to="/" className="flex items-center space-x-3">
-                            <img src="/logo-key.png" alt="Låsta Säteri Logo" className="h-12 w-auto" />
+                            <img src="/logo.png" alt="Låsta Säteri Logo" className="h-12 w-auto" />
                             <span className="text-2xl font-bold text-khaki tracking-wide" style={{ fontFamily: 'Georgia, serif' }}>
                                 Låsta Säteri
                             </span>
@@ -113,7 +113,7 @@ const Layout = ({ children }) => {
                             <ul className="space-y-2 text-sm">
                                 <li className="flex items-center space-x-2">
                                     <Mail size={16} className="text-khaki" />
-                                    <a href="mailto:info@lastasateri.se" className="hover:text-white transition-colors">info@lastasateri.se</a>
+                                    <a href="mailto:lastasateri@gmail.com" className="hover:text-white transition-colors">info@lastasateri.se</a>
                                 </li>
                                 <li className="flex items-center space-x-2">
                                     <Phone size={16} className="text-khaki" />

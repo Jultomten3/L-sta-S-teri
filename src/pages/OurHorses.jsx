@@ -9,8 +9,6 @@ const OurHorses = () => {
                 <div className="text-center mb-16">
                     <h1 className="text-4xl font-serif font-bold text-dark-green mb-6">Våra Hästar</h1>
                     <p className="text-lg text-stone-600 leading-relaxed max-w-2xl mx-auto">
-                        Här presenterar vi hästarna som finns på gården just nu.
-                        Vissa är under utbildning, andra tävlas aktivt och några är till salu.
                     </p>
                 </div>
 
